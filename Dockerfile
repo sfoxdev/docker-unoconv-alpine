@@ -3,10 +3,11 @@ MAINTAINER SFoxDev <admin@sfoxdev.com>
 
 ENV UNO_URL https://raw.githubusercontent.com/dagwieers/unoconv/master/unoconv
 
-ADD convert.sh convert.sh
+ADD scripts /
 
 RUN apk --no-cache add bash mc \
             curl \
+            util-linux \
             libreoffice-common \
             libreoffice-writer \
             ttf-droid-nonlatin \
