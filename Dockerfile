@@ -19,6 +19,7 @@ RUN apk --no-cache add bash mc \
         && chmod +x /usr/local/bin/unoconv \
         && ln -s /usr/bin/python3 /usr/bin/python \
         && chmod +x convert.sh \
+        && chmod +x timer.sh \
         && apk del curl \
         && rm -rf /var/cache/apk/*
 
